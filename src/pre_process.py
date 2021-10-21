@@ -25,18 +25,18 @@ def create_vocab(document, stop_word, start_line = 0):
     print("OPENING OUTPUT FILE")
     file_index = -1
     file_name = path + "/output/word_" + str(file_index) + ".txt"
-    stop = 100
+    stop = 500
 
     output = False
 
     start_time = time.time()
-    for sentence in document:
-        line += 1
+    for line in range(start_line, len(document)):
+        sentence = document[line]
         count += 1
         if( line < start_line):
             continue
-        # print(f"Processing line {line}")
-        if (line % stop == 0 or count > stop) :
+        print(f"Processing line {line}")
+        if (line % stop == 0 or count > stop or output == False) :
 
             end_time = time.time()
             duration = end_time - start_time
@@ -54,7 +54,6 @@ def create_vocab(document, stop_word, start_line = 0):
                 output = open(file_name, "w", encoding="utf-8")
 
             count = 0
-
         sentence = sentence.lower()
         words = split_sent_to_word(sentence, stop_word)
         if(len(words) == 0):
@@ -83,6 +82,6 @@ if __name__ == "__main__":
     print(f"READ DATA DONE (in {duration})")
 
     stop_word = loading_stopWord()
-    words = create_vocab(data, stop_word)
+    words = create_vocab(data, stop_word, 342)
 
  
