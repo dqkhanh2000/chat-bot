@@ -2,10 +2,9 @@ import json
 from underthesea  import word_tokenize
 import re
 import time
-from langdetect import detect
-import threading
+import multiprocessing
 import math
-import io
+
 
 path = "./"
 
@@ -28,7 +27,7 @@ def create_vocab(document, stop_word, start_line = 0):
     print("OPENING OUTPUT FILE")
     file_index = -1
     file_name = path + "/output/word_" + str(file_index) + ".txt"
-    stop = 10000
+    stop = 200
 
     output = False
 
@@ -73,10 +72,10 @@ def loading_stopWord():
     return stopWord
 
 def run_in_thread(start_line, end_line, path, file_name, document, stop_word):
-    # output_data = open(path+"/output/"+file_name+".txt", "wb")
+    output_data = open(path+"/output/"+file_name+".txt", "w")
     output_info = open(path+"/thread_info/"+file_name+"info.txt", "w")
-    output_data = io.FileIO(path+"/output/"+file_name+".txt", 'w')
-    writer = io.BufferedWriter(output_data,buffer_size=100000000)
+    # output_data = io.FileIO(path+"/output/"+file_name+".txt", 'w')
+    # writer = io.BufferedWriter(output_data,buffer_size=100000000)
 
     print(f"START PROCESS {file_name}............")
     start_time = time.time()
@@ -92,13 +91,13 @@ def run_in_thread(start_line, end_line, path, file_name, document, stop_word):
             if(len(words) == 0):
                 continue
             s = json.dumps(words, ensure_ascii=False)
-            writer.write(f"{s}\n")
-            writer.flush()
+            output_data.write(f"{s}\n")
+            # writer.flush()
 
     end_time = time.time()
     duration = end_time - start_time
     print(f"write to {file_name} in {duration} seconds")
-    writer.close()
+    # writer.close()
     output_data.close()
     output_info.close()
 
@@ -106,7 +105,7 @@ if __name__ == "__main__":
 
     start_time = time.time()
     print("OPENING DATA FILE...")
-    file = open("./data/a.txt", "r")
+    file = open("./data/data.txt", "r")
     print("READING DATA FILE...")
     data = file.readlines()
     end_time = time.time()
@@ -122,7 +121,7 @@ if __name__ == "__main__":
 
     threads = []
     total_line = len(data)
-    line_in_file = 10000
+    line_in_file =10000
     total_file = math.floor(total_line/line_in_file) +1
     print(total_file)
 
@@ -130,10 +129,10 @@ if __name__ == "__main__":
         start_line = index * line_in_file
         end_line = start_line + line_in_file
         file_name = f"word_{index}"
-        t = threading.Thread(target=run_in_thread, args=(start_line, end_line, path, file_name, data, stop_word, ))
+        t = multiprocessing.Process(target=run_in_thread, args=(start_line, end_line, path, file_name, data, stop_word, ))
         t.start()
+        # t.join()
         threads.append(t)
-
     for thread in threads:
         thread.join()
 
