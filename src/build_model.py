@@ -3,13 +3,15 @@ from gensim.models.fasttext import FastText
 import json
 
 # path data
-pathdata = './output/words.txt'
+pathdata = './output/data.txt'
 
 def read_data(path):
     train_data = []
     sents = open(path, 'r').readlines()
     for sent in sents:
-       train_data.append(json.loads(sent))
+        if len(sent) < 4:
+            continue
+        train_data.append(json.loads(sent))
     return train_data
 
 if __name__ == '__main__':

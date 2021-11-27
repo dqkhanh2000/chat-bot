@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Chat</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+
+</head>
+
+<body>
+  <div class="container d-flex justify-content-center">
+    <div class="card mt-5">
+      <div class="d-flex flex-row justify-content-between p-3 adiv text-white">
+        <span class="pb-3">Live chat</span>
+      </div>
+      
+      <div id="chat-area">
+        <div class="d-flex flex-row p-3"> <img src="https://img.icons8.com/color/48/000000/broken-robot.png" width="50"
+            height="50">
+          <div class="chat ml-2 p-3">Hello, em tên là Nguyễn Văn Bot <br>Em có thể giúp được gì cho anh/chị đây ạ?</div>
+        </div>
+        <div class="d-flex flex-row-reverse p-3">
+          <img src="https://img.icons8.com/color/48/000000/circled-user-male-skin-type-7.png" width="50" height="50">
+          <div class="bg-white mr-2 p-3"><span class="text-muted">Hello and thankyou for visiting birdlynind.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group px-3 d-flex flex-row">
+        <textarea class="form-control" rows="1" placeholder="Type your message" id="message"></textarea>
+        <button type="button" class="btn btn-primary" id="button-send">Send</button>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
+</body>
+
+</html>
