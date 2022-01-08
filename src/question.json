@@ -1,0 +1,420 @@
+[
+    {
+        "id": 1,
+        "question": [
+            "Chào bạn",
+            "Chào",
+            "Hello",
+            "Hi",
+            "Cho mình hỏi tí được không",
+            "xin chào",
+            "chào bot",
+            "chào em",
+            "anh hỏi một số thứ được không",
+            "alo bot",
+            "hỏi cái",
+            "ê bot",
+            "bot ơi",
+            "bạn ơi",
+            "em ơi",
+            "chào bạn",
+            "dậy đi bot",
+            "dậy nào bạn",
+            "tỉnh dậy bạn",
+            "có thứ cần biết này bot ơi"
+        ],
+        "answer": [
+            "dạ chào anh, anh có thắc mắc gì ạ?",
+            "Chào anh",
+            "Xin chào"
+        ]
+    },
+    {
+        "id": 52,
+        "question": [
+            "Em muốn đăng ký xét học bạ. Hình thức đăng ký như thế nào ạ? Có thể nộp trực tiếp luôn hay không ?",
+            "Cách nộp hồ sơ theo phương thức xét học bạ học bạ",
+            "xét học bạ như thê nào ?",
+            "xét tuyển học bạ",
+            "Đăng ký xét tuyển học bạ"
+        ],
+        "answer": [
+            "Bạn gửi học bạ trực tiếp đến Trường ĐH CNTT-TT VH hoặc đăng ký trên website: https://vku.udn.vn sau đó đến đúng hẹn để nộp học bạ",
+            "Bạn có thể nộp học bạ qua bưu điện hoặc gửi trực tiếp khi đến trường",
+            "Thí sinh đăng ký bằng hình thức trực tuyến trên trang tuyển sinh của Đại học Đà Nẵng (ĐHĐN) tại địa chỉ ts.udn.vn."
+        ]
+    },
+
+    {
+        "id": 53,
+        "question": [
+            "Em đã tốt nghiệp năm trước nhưng vì một vài lý do nên không thế đi học. Liệu năm nay em có thể xét học bạ vào trường được không ạ?",
+            "Đã tốt nghiệp nằm trước, năm nay có thể đăng ký xét học bạ vô trường không?"
+        ],
+        "answer": [
+            "Trường không yêu cầu năm tốt nghiệp nên bạn có thể đăng ký xét học bạ nhé."
+        ]
+    },
+
+    {
+        "id": 54,
+        "question": [
+            "Khi xét hồ sơ học bạ, vì chưa có học bạ em có thể nộp bảng điểm thay thế được không",
+            "Có thể nộp bảng điểm trước khi có học bạ được không ?",
+            "Nộp bảng điểm khi chưa có học bạ"
+        ],
+        "answer": [
+            "Em có thể nộp bảng điểm thay cho học bạ nhưng phải có xác nhận của Ban giám hiệu và con dấu của nhà trường thì mới hợp lệ."
+        ]
+    },
+    {
+        "id": 55,
+        "question": [
+            "Tính điểm xét tuyển khi xét học bạ",
+            "Điểm khi xét học bạ"
+        ],
+        "answer": [
+            "Em sẽ cộng các điểm lớp 10, 11, 12 theo thang điểm 10 rồi chia ra lấy trung bình, sau đó cộng điểm vùng(nếu có)"
+        ]
+    },
+    {
+        "id": 56,
+        "question": [
+            "Thí sinh chưa có bằng tốt nghiệp THPT có thể nộp hồ sơ đăng ký xét tuyển theo hình thức xét học bạ được không",
+            "Chưa có bằng tốt nghiệp thì đăng ký xét học bạ ra sao"
+        ],
+        "answer": [
+            "Thí sinh có thể nộp hồ sơ ĐKXT khi chưa có chứng nhận tốt nghiệp tạm thời; ĐHĐN sẽ thông báo nộp bổ sung minh chứng tốt nghiệp THPT vào thời điểm thích hợp."
+        ]
+    },
+    {
+        "id": 57,
+        "question": [
+            "Việc xét tuyển vào từng ngành có phụ thuộc vào thứ tự ưu tiên của thí sinh khi ĐKXT?",
+            "Đăng ký nhiều ngành thì có phụ thuộc vào thứ tự ưu tiên khi xét không ?"
+        ],
+        "answer": [
+            "Đối với từng ngành, các thí sinh được xét tuyển bình đẳng theo điểm xét tuyển, không phân biệt thứ tự ưu tiên của nguyện vọng đăng ký."
+        ]
+    },
+    {
+        "id": 58,
+        "question": [
+            "Nếu 1 thí sinh vừa ĐKXT bằng học bạ vừa ĐKXT bằng kết quả thi THPT thì có trúng tuyển cả không?",
+            "Nếu đăng ký cả xét học bạ lẫn thi THPT thì sao?"
+        ],
+        "answer": [
+            "Thí sinh chỉ có thể trúng tuyển 1 trong 2 hình thức xét tuyển. Xét tuyển học bạ Đợt 1 được tiến hành trước xét tuyển bằng kết quả thi THPT Đợt 1. Nếu thí sinh trúng tuyển xét học bạ nhưng không xác nhận nhập học trong thời gian qui định của ĐHĐN thì được xem như từ chối kết quả trúng tuyển và có quyền xét tuyển theo kết quả thi THPT. Nếu thí sinh trúng tuyển xét học bạ và xác nhận nhập học trong thời gian qui định của ĐHĐN thì thí sinh bị loại tên khỏi danh sách xét tuyển theo kết quả thi THPT trên toàn quốc."
+        ]
+    },
+    {
+        "id": 59,
+        "question": [
+            "Em có xem thông tin trên website thấy thông tin về tuyển sinh riêng, phương thức này là thi tuyển hay xét tuyển, cách đăng ký như thế nào ạ?",
+            "Phương thức xét tuyển riêng hoặc thi tuyển riêng ?"
+        ],
+        "answer": [
+            "Đối với phương thức tuyển sinh riêng, các CSĐT khác nhau sẽ có thông báo về đối tượng và các tiêu chí phụ để xét, để đăng ký hồ sơ xét vào CSĐT nào thì em tham khảo thông tin tuyển sinh cụ thể của từng đơn vị để làm hồ sơ."
+        ]
+    },
+    {
+        "id": 510,
+        "question": [
+            "Em có thi học sinh giỏi và đạt giải nhưng ban tổ chức vẫn chưa trao thưởng nên vẫn chưa nhận được giấy khen để nộp vào hồ sơ xét tuyển, em có thể bổ sung giấy khen được không",
+            "Có thể nộp bổ sung giấy khen thi học sinh giỏi không ? Do chưa nhận được giải thưởng"
+        ],
+        "answer": [
+            "Em có thể đợi trao thưởng từ sở GDĐT rồi nộp hồ sơ "
+        ]
+    },
+    {
+        "id": 511,
+        "question": [
+            "Em muốn hỏi về chương trình đào tạo đại trà và chất lượng cao? Học phí như thế nào?",
+            "Học phí?",
+            "Chương trình đào tạo?"
+        ],
+        "answer": [
+            "Học phí theo quy định của Chính phủ: Chương trình truyền thống học phí thấp hơn, chương trình CLC học phí gấp khoảng 2.5 lần so với chương trình tuyền thống.",
+            "Em có thể xem trực tiếp học phí và chương trình đào tạo tại https://vku.udn.vn"
+        ]
+    },
+    {
+        "id": 512,
+        "question": [
+            "Trường mình có các câu lạc bộ nào ạ?",
+            "CLB của trường ?"
+        ],
+        "answer": [
+            "Trường mình có rất nhiều CLB em nhé, như CLB bóng chuyền, bóng đá, tiếng anh,.... Em có thể lên fanpage của trường để theo dõi"
+        ]
+    },
+    {
+        "id": 513,
+        "question": [
+            "Em nghe nói việc kiếm tra tiếng anh đầu vào, việc này có ảnh hưởng đến tuyển sinh không ạ?",
+            "Kiểm tra tiếng anh đầu vào?"
+        ],
+        "answer": [
+            "Việc này thì không ảnh hưởng em nhé  "
+        ]
+    },
+    {
+        "id": 514,
+        "question": [
+            "Chỉ tiêu xét tuyển của trường ?",
+            "Chỉ tiểu của trường ?"
+        ],
+        "answer": [
+            "Trường năm nay lấy khoảng 1300 sinh viên, trong đó 1000 sinh viên CNTT và 300 sinh viên QTKD"
+        ]
+    },
+    {
+        "id": 515,
+        "question": [
+            "Em học CNTT thì nên mua máy tính của hãng nào ạ?",
+            "Mua máy tính cho CNTT"
+        ],
+        "answer": [
+            "Cứ máy nào tầm trên 30 triệu là được em nhé :v"
+        ]
+    },
+    {
+        "id": 516,
+        "question": [
+            "Hạn nộp học bạ ?",
+            "Bao giờ thì hết hạn nộp học bạ?"
+        ],
+        "answer": [
+            "Trường sẽ nhận học bạ từ ngày 05/05/2021 - 05/08/2021"
+        ]
+    },
+    {
+        "id": 517,
+        "question": [
+            "Điều kiện để trúng tuyển trực tiếp mà không cần xét học bạ hay kết quả thi THPT quốc gia ?"
+        ],
+        "answer": [
+            "Em gửi thông tin của em về mail của trường (daotao@vku.udn.vn) để được tư vấn trực tiếp"
+        ]
+    },
+    {
+        "id": 518,
+        "question": [
+            "Điểm học bạ qua các năm ?",
+            "Điểm học bạ năm 2020"
+        ],
+        "answer": [
+            "Trường lấy điểm học bạ qua các năm 2021 lấy 20 điểm, 2020 lấy 19 điểm, 2019 lấy 18 điểm, 2018 lấy 17 điểm"
+        ]
+    },
+    {
+        "id": 519,
+        "question": [
+            "Điểm thi THPT Quốc gia qua các năm ?",
+            "Điểm thi THPT Quốc gia?"
+        ],
+        "answer": [
+            "Trường lấy điểm thi THPT Quốc gia qua các năm 2021 lấy 23 điểm, 2020 lấy 20 điểm, 2019 lấy 18 điểm, 2018 lấy 17 điểm"
+        ]
+    },
+    {
+        "id": 520,
+        "question": [
+            "Muốn xét tuyển vô trường thì phải đạt những điều kiện gì?",
+            "Điều kiện khi xét tuyển vô trường"
+        ],
+        "answer": [
+            "Các bạn học sinh khi muốn xét tuyển vô trường thì phải tốt nghiệp THPT hoặc tương đương trở lên"
+        ]
+    },
+    {
+        "id": 521,
+        "question": [
+            "Hồ sơ nhập học thì gồm những gì ?",
+            "Hồ sơ nhập học?"
+        ],
+        "answer": [
+            "Hồ sơ vào trường thì cần có: 1. Phiếu đăng ký dự tuyển Cao đẳng/Trung cấp hệ Chính quy năm 2020. 2. Bản sao có chứng thực bằng tốt nghiệp THCS, THPT (hoặc tương đương trở lên); Đối với thí sinh tốt nghiệp THCS, THPT năm 2021, bổ sung Giấy chứng nhận tốt nghiệp tạm thời. 3. Ghi rõ địa chỉ, số điện thoại thí sinh"
+        ]
+    },
+    {
+        "id": 522,
+        "question": [
+            "Sau khi gửi hồ sơ tuyển sinh, bao lâu thì nhận được kết quả trúng tuyển?",
+            "Khi nào trường thông báo kết quả trúng tuyển?"
+        ],
+        "answer": [
+            "Sau khi nhận hồ sơ, trường sẽ tiến hành kiểm tra hồ sơ, nếu hồ sơ đầy đủ và hợp lệ, Trường sẽ tiến hành gửi Giấy báo trúng tuyển ngay cho thí sinh và gọi các em nhập học"
+        ]
+    },
+    {
+        "id": 524,
+        "question": [
+            "Có thể thay đổi ngành học đã đăng ký hay không ?",
+            "Thay đổi ngành học"
+        ],
+        "answer": [
+            "Có thể thay đổi ngành học, miễn là trước ngày nhập học"
+        ]
+    },
+    {
+        "id": 525,
+        "question": [
+            "Khi trúng tuyển mà không muốn đi học có thể bảo lưu kết quả được hay không",
+            "Chưa muốn đi học, bảo lưu kết quả"
+        ],
+        "answer": [
+            "Khi trúng tuyển vào trường, nếu chưa có điều kiện đi học em có thể liên hệ với Trường để làm thủ tục bảo lưu kết quả trúng tuyển."
+        ]
+    },
+    {
+        "id": 526,
+        "question": [
+            "Làm sao em có thể biết mình có trúng tuyển vào Trường hay không?",
+            "Trúng tuyển vô trường"
+        ],
+        "answer": [
+            "Sau khi kiểm tra đầy đủ hồ sơ, Trường sẽ thông báo việc trúng tuyển ngay cho thí sinh bằng điện thoại trước khi gửi thông báo chính thức. Tất cả hồ sơ hợp lệ đều được xét trúng tuyển"
+        ]
+    },
+    {
+        "id": 527,
+        "question": [
+            "Làm sao em có thể biết mình có trúng tuyển vào Trường hay không?",
+            "Trúng tuyển vô trường"
+        ],
+        "answer": [
+            "Sau khi kiểm tra đầy đủ hồ sơ, Trường sẽ thông báo việc trúng tuyển ngay cho thí sinh bằng điện thoại trước khi gửi thông báo chính thức. Tất cả hồ sơ hợp lệ đều được xét trúng tuyển"
+        ]
+    },
+    {
+        "id": 528,
+        "question": [
+            "Sau khi xét tuyển thành công thì nộp lệ phí bằng cách nào ?",
+            "Nộp lệ phí vô trường"
+        ],
+        "answer": [
+            "Có thể nộp trực tiếp tại trường, nộp qua bưu điện hoặc là nộp vào tài khoản của trường"
+        ]
+    },
+    {
+        "id": 529,
+        "question": [
+            "Sau khi vào trường thì có được hoãn nghĩa vụ quân sự hay không ",
+            "Hoãn nghĩa vụ khi nhập học"
+        ],
+        "answer": [
+            "Em được hoãn nghĩa vụ quân sự theo quy định của Luật nghĩa vụ quân sự"
+        ]
+    },
+    {
+        "id": 530,
+        "question": [
+            "Đăng ký vào ở trong ký túc xá của trường",
+            "Các bước đăng ký ở ký túc xá"
+        ],
+        "answer": [
+            "Sau khi đăng ký nhập học thì sẽ có 1 bộ phận đăng ký KTX, em chỉ cần vô đó đăng ký là được"
+        ]
+    },
+    {
+        "id": 531,
+        "question": [
+            "Đăng ký vào ở trong ký túc xá của trường",
+            "Các bước đăng ký ở ký túc xá"
+        ],
+        "answer": [
+            "Sau khi đăng ký nhập học thì sẽ có 1 bộ phận đăng ký KTX, em chỉ cần vô đó đăng ký là được"
+        ]
+    },
+    {
+        "id": 532,
+        "question": [
+            "Sau đợt này liệu có xét tuyển đợt 2 không ?",
+            "Xét tuyển đợt 2"
+        ],
+        "answer": [
+            "Tùy theo số lượng hồ sơ đợt 1, nếu thiếu chỉ tiêu nhà trường sẽ tiếp tục thực hiện xét tuyển đợt 2"
+        ]
+    },
+    {
+        "id": 533,
+        "question": [
+            "Khu vực ưu tiên và đối tượng ưu tiên được cộng điểm như thế nào?",
+            "Quy tắc cộng điểm ưu tiên"
+        ],
+        "answer": [
+            "Xem chi tiết tại https://vku.udn.vn/congdiemuutien"
+        ]
+    },
+    {
+        "id": 534,
+        "question": [
+            "Học bổng khen thưởng của tân sinh viên",
+            "Học bổng tân sinh viên"
+        ],
+        "answer": [
+            "Các bạn đọc kỹ tại mục 2.3 về vấn đề khen thưởng cho các bạn tân sinh viên tại https://vku.udn.vn/khenthuongtansinhvien"
+        ]
+    },
+    {
+        "id": 535,
+        "question": [
+            "Thời gian hoàn thành chương trình học trong bao lâu, có thể rút ngắn thời gian đào tạo được hay không?",
+            "Hoàn thành sớm thời gian đào tạo"
+        ],
+        "answer": [
+            "Các bạn có thể đăng ký học sớm một số môn, nếu như có đủ số lượng sinh viên"
+        ]
+    },
+    {
+        "id": 536,
+        "question": [
+            "Các chứng chỉ cần thiết khi ra trường ?"
+        ],
+        "answer": [
+            "Ngoài chứng chỉ về ngành học, còn phải có chứng chỉ về  ngoại ngữ, quân sự, thể dục,..."
+        ]
+    },
+    {
+        "id": 537,
+        "question": [
+            "Cơ hội việc làm sau khi ra trường",
+            "Việc làm"
+        ],
+        "answer": [
+            "Ở các năm 3 và 4 thì nhà trường có mời các doanh nghiệp về giao lưu với sinh viên, ngoài ra nhà trường có page riêng để đăng các tin tuyển dụng"
+        ]
+    },
+    {
+        "id": 538,
+        "question": [
+            "Trường có những ngành nào ?",
+            "Ngành đào tạo của trường"
+        ],
+        "answer": [
+            "Trường ĐH CNTT-TT VH hiện tại có rất nhiều ngành như CNTT, QTKD, ...."
+        ]
+    },
+    {
+        "id": 539,
+        "question": [
+            "Gia đình khó khăn, có hỗ trợ về học phí hay không?",
+            "Hỗ trợ của nhà trường đối với các gia đình khó khăn"
+        ],
+        "answer": [
+            "Nhà trường có nhiều chính sách tạo điều kiện cho các bạn hoàn cảnh khó khăn như giảm học phí, hỗ trợ tiền mỗi tháng,... "
+        ]
+    },
+    {
+        "id": 540,
+        "question": [
+            "Các trang thiết bị học tập tại trường",
+            "Thiết bị học tập"
+        ],
+        "answer": [
+            "Nhà trường có các phòng cung cấp các trang thiết bị học tập cần thiết cho các ngành như phòng máy Mac, phòng dụng cụ kỹ thuật,..."
+        ]
+    }
+]

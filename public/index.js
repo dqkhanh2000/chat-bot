@@ -13,7 +13,7 @@ $("#button-send").click(() => {
   $.post(url, data, function (data, status) {
     data = JSON.parse(data);
     console.log(data)
-    if (status === "success" && data.confident > 0.1) {
+    if (status === "success" && data.confident >= 0.5) {
       addMessage(data.answer, false);
     } else {
       addMessage(

@@ -3,8 +3,19 @@ import re
 import json
 import time
 import fasttext
+from constant import *
+import numpy as np
 
 STOP_WORD = []
+
+  
+def compare_array(a, b):
+  if len(a) != len(b):
+    return True
+  for i in range(len(a)):
+      if(a[i] != b[i]):
+        return True
+  return False
 
 def loading_stop_word():
     stopWord = []    
@@ -40,15 +51,30 @@ def load_json_data(json_path):
   file.close()
   return data
 
-def read_svm_file(path):
+def read_data_file(path):
   file = open(path, "r")
   list = file.readlines()
   data = []
   for line in list:
-    data.append(json.loads(line))
+    data.append(np.array(json.loads(line)))
   return data
 
-def load_model(model_path):
+def create_sentence_vec(w2v_model, sentence: str):
+  list_word = sentence.split(" ")
+  vec = []
+  none_vec = w2v_model.get_word_vector("0").tolist()
+  for i in range(SENTENCE_LENGTH):
+    if i < len(list_word) - 1:
+      word_vec = w2v_model.get_word_vector(list_word[i]).tolist()
+      vec.append(word_vec)
+    else:
+      vec.append(none_vec)
+  # for word in list_word:
+  #   word_vec = w2v_model.get_word_vector(word).tolist()
+  #   vec.append(word_vec)
+  return vec
+
+def load_word2vec_model(model_path):
   print("LOADING WORD2VEC MODEL")
   start_time = time.time()
   model = fasttext.load_model(model_path)
