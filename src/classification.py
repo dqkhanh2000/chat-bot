@@ -5,8 +5,7 @@ import numpy as np
 from keras.layers.recurrent import LSTM
 from keras.models import Sequential
 from keras.layers.core import Dense
-from keras.layers import Dropout, Flatten
-from keras.layers.embeddings import Embedding
+from keras.layers import Dropout
 from prepare_classification_data import *
 import os.path
 from constant import *

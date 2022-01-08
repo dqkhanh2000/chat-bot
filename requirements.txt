@@ -1,0 +1,6 @@
+underthesea
+sklearn
+Flask
+tensorflow
+fasttext
+numpy
