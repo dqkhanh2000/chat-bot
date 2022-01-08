@@ -1,4 +1,6 @@
-*.txt
+data/
+model_prebuild/
+output/
 model/
 __pycache__/
 *.pyc

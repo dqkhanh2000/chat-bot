@@ -19,7 +19,7 @@ def compare_array(a, b):
 
 def loading_stop_word():
     stopWord = []    
-    with open('./stop_word.txt', 'r', encoding='utf-8') as f:
+    with open(f'./{CLASSIFICATION_DATA_PATH}/stop_word.txt', 'r', encoding='utf-8') as f:
         for s_line in f:
             stopWord.append(s_line.strip())
     return stopWord

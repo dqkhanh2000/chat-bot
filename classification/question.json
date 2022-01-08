@@ -1,0 +1,445 @@
+[
+    {
+      "id": 1,
+      "question": [
+          "Chào bạn",
+          "Chào",
+          "Hello",
+          "Hi",
+          "Cho mình hỏi tí được không",
+          "xin chào",
+          "chào bot",
+          "chào em",
+          "anh hỏi một số thứ được không",
+          "alo bot",
+          "hỏi cái",
+          "ê bot",
+          "bot ơi",
+          "bạn ơi",
+          "em ơi",
+          "chào bạn",
+          "dậy đi bot",
+          "dậy nào bạn",
+          "tỉnh dậy bạn",
+          "có thứ cần biết này bot ơi"
+      ],
+      "answer": [
+          "dạ chào anh, anh có thắc mắc gì ạ?",
+          "Chào anh",
+          "Xin chào"
+      ]
+  },
+  {
+      "id": 2,
+      "question": [
+          "Hôm nay thời tiết thế nào ?",
+          "thời tiết hôm nay thế nào ?",
+          "thời tiết hôm nay ?",
+          "thời tiết ngày hôm nay như thế nào ?",
+          "tình hình thời tiết hôm nay ? ",
+          "tình hình thời tiết ngày hôm nay ? ",
+          "thời tiết, hiện tại ?",
+          "hiện tại thời tiết như thế nào ?",
+          "Dự báo thời tiết hôm nay ?",
+          "Tổng quan thời tiết hôm nay",
+          "Ngày mai thời tiết thế nào ?",
+          "thời tiết ngày mai thế nào ?",
+          "thời tiết ngày mai ?",
+          "tình hình thời tiết ngày tiếp theo ? ",
+          "tình hình ngày mai thời tiết như nào ? ",
+          "thời tiết, ngày mai ?",
+          "thời tiết ngày tiếp theo ?",
+          "ngày tiếp theo thời tiết như nào ?",
+          "Dự báo thời tiết ngày mai ?",
+          "Tổng quan thời tiết ngày mai ?"
+      ],
+      "answer": [
+          "dạ nay trời nắng",
+          "dạ hôm nay trời nắng",
+          "trời nắng ạ",
+          "thời tiết hôm nay có nắng ạ"
+      ]
+  },
+  {
+      "id": 5,
+      "question": [
+          "hoạt động hôm nay như nào ?",
+          "Kế hoạch ngày hôm này ?",
+          "lịch trình hôm nay ?",
+          "hôm nay có hoạt động gì ?",
+          "hôm nay có kế hoạch nào ?",
+          "Hôm nay làm gì ?",
+          "hiện tại có kế hoạch gì không ?",
+          "tổng quan kế hoạch hôm nay như thế nào ?",
+          "hôm nay đi đâu",
+          "lịch di chuyển hôm nay",
+          "liệu hôm nay ta đi đâu",
+          "những nơi ta đi hôm nay",
+          "những nơi chốn ta sẽ đi hôm nay",
+          "đi đâu bây giờ",
+          "em ơi nay đi đâu",
+          "bot ơi nay ta đi đâu",
+          "bạn ơi hôm nay chúng ta sẽ làm gì",
+          "nay có hoạt động gì không em",
+          "nay ta sẽ đi đâu vậy bot"
+      ],
+      "answer": [
+          "Dạ hôm nay có lịch đi học",
+          "Đi học ạ"
+      ]
+  },
+  {
+      "id": 6,
+      "question": [
+          "ăn cơm chưa ?",
+          "đã ăn gì chưa",
+          "bạn ăn gì chưa",
+          "nay ăn gì chưa",
+          "em ăn gì chưa",
+          "anh ăn gì chưa",
+          "hôm nay đi ăn gì ?",
+          "ăn gì hôm nay ?",
+          "bây giờ ăn gì",
+          "đi ăn gì bây giờ ?",
+          "kế hoạch đi ăn hôm nay",
+          "hôm nay chúng ta ăn gì",
+          "ăn cái gì",
+          "muốn ăn gì bây giờ",
+          "bạn muốn ăn ở đâu ?",
+          "nay muốn đi ăn ở đâu ?",
+          "đi đâu ăn hôm nay ?",
+          "muốn hôm nay ăn ở đâu ?",
+          "ăn ở đâu hôm nay",
+          "muốn đi đâu ăn",
+          "ăn đâu bây giờ ?",
+          "bây giờ muốn đi đâu ăn"
+      ],
+      "answer": [
+          "Dạ nay lên phố ăn bán nha",
+          "Nay ta đi ăn bánh ở trung tâm thành phố được không ạ"
+      ]
+  },
+  {
+      "id": 9,
+      "question": [
+          "tin tức ngày hôm nay ?",
+          "Hôm nay có tin tức gì hấp dẫn không ?",
+          "tin tức hot ?",
+          "tổng qua tin tức ngày hôm nay ?",
+          "bản tin hot ?",
+          "tin tức hấp dẫn?",
+          "thông tin nổi bật ?",
+          "các tin tức nổi bật ?",
+          "bot ơi tin tức hôm nay",
+          "tin tức hot hôm nay bạn ơi",
+          "bot, hôm nay có gì hay không",
+          "em ơi, tình hình hôm nay thế nào",
+          "tin tức hôm nay có gì khác hấp dẫn không",
+          "bản tin hiện tại có cái gì hấp dẫn không",
+          "alo, thông tin hôm nay",
+          "cho xin tin tức hot hôm nay",
+          "Tình hình dịch bệnh hôm nay",
+          "Dịch covid diễn biến",
+          "Tin tức về dịch covid",
+          "Diễn biến covid ngày hôm nay",
+          "Covid hôm nay",
+          "Covid diễn biến như thế nào",
+          "Dịch nay như thế nào"
+      ],
+      "answer": [
+          "covid diễn biến phức tạp",
+          "các ca covid đang tăng",
+          "covid vẫn có tình trạng tăng mạnh",
+          "Ngày nay có thêm 9.889 ca mắc mới",
+          "Tình hình diễn biến ngày càng phức tạp, TP HCM dẫn đầu trong tổng số ca trong nước"
+      ]
+  },
+  {
+      "id": 10,
+      "question": [
+          "bạn làm được gì ?",
+          "bạn làm được cái gì ?",
+          "bot làm đc gì ?",
+          "năng lực của bạn là gì",
+          "bạn có thể giúp gì cho tôi",
+          "bot có tác dụng gì",
+          "em giúp gì được cho anh",
+          "năng lực của bot có gì đặc sắc",
+          "các năng lực của bot",
+          "tổng hợp công dụng của bot",
+          "năng lược của em là gì",
+          "alo, trình bày năng lực bản thân",
+          "liệt kê các năng lực đi",
+          "hãy cho tôi biết các chức năng của bạn",
+          "cho tôi biết bạn làm được gì cho tôi",
+          "thông tin năng lực của bot"
+      ],
+      "answer": [
+          "em có thể trả lời các câu hỏi cho anh/chị"
+      ]
+  },
+  {
+      "id": 11,
+      "question": [
+          "các game hot hiện nay ?",
+          "bảng xếp hạng game hiện nay ?",
+          "game hay hiện nay?",
+          "game pc hay",
+          "danh sách game hot",
+          "trò chơi hay nhiều người chơi",
+          "tổng quan trò chơi hay",
+          "tổng hợp game hay",
+          "game nhiều người chơi",
+          "bot cho biết các game hay hiện nay ",
+          "tin tức game hot hiện nay",
+          "alo, cho xin các game hay",
+          "hãy cho tôi biết các game nên chơi",
+          "cho tôi xin vài game để chơi",
+          "gợi ý game cho tôi",
+          "các game đáng chú ý",
+          "bot cho anh hỏi vài game hay nào"
+      ],
+      "answer": [
+          "Dạ có game pubg, liên minh huyền thoại, csgo",
+          "các trò chơi như liên minh huyền thoại, csgo, pubg ạ"
+      ]
+  },
+  {
+      "id": 14,
+      "question": [
+          "em có người yêu chưa ?",
+          "có người yêu chưa ?",
+          "người yêu em là ai ?",
+          "người yêu em",
+          "em tên gì ?",
+          "tên em là gì",
+          "tên em ?",
+          "em có tên không ?",
+          "ten bot gì ?",
+          "Bot sinh lúc nào?",
+          "bot được sinh ra vào thời gian nào",
+          "thời gian ra đời của bot",
+          "bot được bao nhiêu tuổi rồi",
+          "em giới thiệu bản thân đi",
+          "nói sơ qua về em đi",
+          "bot hãy nói ra thông tin của mình đi",
+          "hãy nói cho tôi biết các thông tin về bạn"
+      ],
+      "answer": [
+        "Em tên Nguyễn Văn Bot, 1 tháng tuổi, chưa có người yêu ạ",
+        "Em tên Bot, chưa có người yêu và vừa tròn 1 tháng tuổi"
+      ]
+  },
+  {
+      "id": 16,
+      "question": [
+          "nơi có đồ ăn ngon",
+          "những nơi có đồ ăn ngon ?",
+          "ẩm thực nơi nào ngon",
+          "điểm mặt các nơi có đồ ăn ngon",
+          "muốn ăn ngon nên đi đâu",
+          "tổng quan các nơi có ẩm thực phong phú",
+          "chỗ nào ăn ngon",
+          "địa điểm ăn uống ngon",
+          "Khu du lịch nổi tiếng",
+          "Địa điểm du lịch nổi tiếng nhất",
+          "Du lịch ở đâu ?",
+          "Các điểm du lịch đang hot hiện nay",
+          "Du lịch ở đâu rẻ",
+          "Địa điểm du lịch đẹp",
+          "Khu du lịch sang trọng",
+          "Ở đâu cảnh đẹp nhất",
+          "Cảnh đẹp",
+          "những nơi cảnh đẹp ẩm thực ngon",
+          "bot cho anh hỏi nơi có đò ăn ngon",
+          "cho anh xin các nơi có cảnh đẹp",
+          "địa chỉ đáng đi nhất năm nay"
+      ],
+      "answer": [
+          "Đà Nẵng ạ",
+          "Chắc chắn là tp Đà Nẵng"
+      ]
+  },
+  {
+    "id":21,
+    "question":[
+      "Tin tức thể thao ngày hôm nay",
+      "Thể thao có tin tức gì không",
+      "Tin mới nhất về thể thao",
+      "Thông tin mới nhất về thể thao",
+      "Tin vắn thể thao",
+      "Tin ngắn thể thao ngày hôm nay",
+      "Nay có trận bóng nào không ?",
+      "Trận bóng ngày hôm nay",
+      "Trận đấu ngày hôm nay ",
+      "Trận đá bóng",
+      "Bóng đá",
+      "Trận bóng",
+      "Bóng đá ngày hôm nay",
+      "Nay có mấy trận bóng",
+      "Bóng đá hôm nay"
+    ],
+    "answer":[
+      "Nay có trận giữa MU vs MC vào lúc 9h30p theo giờ Việt Nam",
+      "Nay không có trận nào hết ",
+      "Ai biết",
+      "nay có nhiều trận lắm ạ"
+    ]
+  },
+  {
+    "id": 24,
+    "question":[
+      "Chuyển nhượng thị trường nước ngoài",
+      "Chuyện nhượng bóng đá ngoại hạng anh",
+      "Thị trường chuyển nhượng nước ngoài",
+      "Dự án chuyển nhượng nước ngoài",
+      "Sang nhượng cầu thủ bóng đá nước ngoài",
+      "Thị trường chuyển nhượng bóng đá Việt Nam",
+      "Thị trường chuyển nhượng bóng đá mới nhất",
+      "Chuyển nhượng trong nước",
+      "Chuyển nhượng VLEAGUE",
+      "Chuyển nhượng dự án trong nước",
+      "thị trường chuyển nhượng tuần qua",
+      "tổng hợp tin tức chuyển nhượng",
+      "các thông tin về chuyển nhượng",
+      "bot ơi cho mình biết thông tin thị trường chuyển nhượng trong vào ngoài nước nào",
+      "alo tin tức chuyển nhượng"
+    ],
+    "answer":[
+      "Ronaldo tiến cử ‘kình địch cũ’ để thay thế Solskjaer tại MU, Cựu tuyển thủ Quốc gia Nguyễn Thế Anh đã chính thức nhận lời mời trở thành huấn luyện viên thủ môn của Hà Nội FC bắt đầu từ mùa giải 2022.",
+      "MU liên hệ Luis Enrique, Chelsea gửi đề nghị Tchouameni, Tiền vệ Đỗ Văn Thuận đã chính thức nói lời chia tay CLB TP.HCM để chuyển sang khoác áo CLB Bình Định trước thềm mùa giải 2022"
+    ]
+  },
+  {
+    "id":25,
+    "question":[
+      "Nay có phim gì mới không?",
+      "Phim hay nhất",
+      "Phim chiếu rạp hay nhất",
+      "Phim 2021",
+      "Những bộ phim đang hot nhất hiện nay",
+      "Phim mới ra",
+      "Phim nên xem",
+      "Phim hot",
+      "Phim hay trên netflix",
+      "bot ơi danh sách phim",
+      "cho xin phim xem",
+      "hãy cho biết vài phim hay nào",
+      "tên các bộ phim hay tuần qua",
+      "cho tôi xin các phim đáng xem",
+      "em giới thiệu anh vài phim đáng xem",
+      "alo tên phim đáng xem",
+      "muỗn xem phim"
+      
+    ],
+    "answer":[
+      "Trò chơi con mực (Squid game) - Phim hay siêu HOT đang gây bão trên Netflix Ngày công chiếu: 17/9/2021",
+      "Quốc tử Giám có một nữ đệ tử - Phim hay Trung Quốc 2021"
+    ]
+  },
+  {
+    "id": 26,
+    "question": [
+      "Nhạc nay có gì mới?",
+      "Nhạc hay nhất",
+      "Những bài nhạc hay nhất",
+      "Nhạc",
+      "Nhạc hay nhất trên zing",
+      "Bài hát hay",
+      "Bài hát mới ra",
+      "Bài hát thịnh hành hiện nay",
+      "Liên khúc nhạc hay nhất",
+      "Tổng hợp những bài hát hay nhất hiện nay",
+      "Liên khúc nhạc trẻ",
+      "Tổng hợp những bài hát năm 2020",
+      "Liên khúc nhạc trẻ",
+      "Liên khúc nhạc trên zing-mp3",
+      "Kho nhạc hay",
+      "Kho nhạc trẻ hiện nay",
+      "cho xin xíu nhạc hay",
+      "nhạc bot ơi",
+      "bot ơi cho xin nhạc hay"
+    ],
+    "answer":[
+      "Tan vỡ - Chi Dân đang đứng đầu top 1 trên zingmp3",
+      "Độ Tộc 2 bài hát hot nhất hiện nay",
+      "Top 40 bài hát nhiều lượt xem nhất : https://www.youtube.com/watch?v=PYhbPV7MahE",
+      "Top 30 hits nhạc trẻ triệu view: https://www.youtube.com/watch?v=ZpPW3oleY4A"
+    ]
+  },
+  {
+    "id":28,
+    "question":[
+      "Công việc gì hot nhất hiện nay ?",
+      "Công việc kiếm nhiều tiền nhất",
+      "Học ngành gì ra kiếm nhiều tiền nhất ?",
+      "Ngành học gì ra dễ xin việc nhất ?",
+      "Ngành học gì không sợ thất nghiệp ",
+      "Top 1 ngành học ra trường dễ xin việc nhất",
+      "Học cái gì gái theo nhiều nhất",
+      "Ngành học dễ đi nước ngoài nhất",
+      "Ngành nào công ty nước ngoài tuyển dụng nhiều nhất ?",
+      "học gì nhiều tiền",
+      "muốn có tiền học gì bot",
+      "học gì sẽ có việc làm",
+      "hay cho tôi biết học gì có tương lai nhất",
+      "học ngành gì dễ xin việc",
+      "bot cho biết thông tin ngành học hot hiện nay",
+      "em cho anh xin ngành học ok hiện nay",
+      "gành học hot hiện nay"
+    ],
+    "answer":[
+      "Học công nghệ thông tin",
+      "Theo Lộc Fuho, làm fuho lương 100tr/tháng"
+    ]
+  },
+  {
+    "id":30,
+    "question":[
+      "Dự định tương lai",
+      "Kế hoạch tương lai",
+      "Cập nhật những gì trong thời gian tới",
+      "Kế hoạch dự định sắp tới",
+      "Dự đoán sẽ làm gì trong tương lai",
+      "Tương lai sẽ làm được những gì",
+      "Sẽ làm được gì trong thời gian tiếp theo",
+      "Trong tương lai sẽ thay đổi những gì ",
+      "Update trong tương lai",
+      "Khác biệt với các chatbot khác ?",
+      "Khác biệt",
+      "Điều gì làm nên sự khác biệt",
+      "Chức năng tạo nên sự khác biệt",
+      "Tính năng nào làm nên sự khác biệt",
+      "Khác gì với các chatbot sẵn có",
+      "Tính năng gì là duy nhất"
+    ],
+    "answer":[
+      "Dự tính trong tương lai sẽ update thêm một số chức năng như: chat theo chủ đề, cải thiện chất lương,... để tốt hơn con bot khác"
+    ]
+  },
+  {
+    "id":32,
+    "question":[
+     "Học gì để qua môn ?",
+     "Cần những gì để qua môn này ",
+     "Qua môn này như thế nào ?",
+     "Cách qua môn NLP",
+     "Kiến thức để qua môn này",
+     "Học như thế nào để qua môn ",
+     "Qua môn bằng cách nào ?",
+     "Những kiến thức để qua môn",
+     "muốn qua môn thì phải làm gì",
+     "kinh nghiệm tránh qua môn",
+     "làm gì để không học lại",
+     "học như nào để không bị học lại",
+     "bot cho xin các cách để không phải học lại",
+     "em ơi giúp anh không bị học lại với",
+     "điều cần làm để qua môn",
+     "top những cách học qua môn",
+     "cho tôi biết làm sao để học qua môn"
+    ],
+    "answer":[
+      "Nắm chắc những kiến thức cần thiết như stopwords, bag of word, n-grams,.... Nói thì nói chứ cũng không biết"
+    ]
+  }
+]
