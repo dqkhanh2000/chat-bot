@@ -86,8 +86,6 @@ def process_file(file_name, file_path, output_path, debug, max_line = 2000000):
     start_time = time.time()
     file_data = open(file_path, "r", encoding="utf-8")
     print(f"READING {file_name}...")
-    data = file_data.readlines()
-    file_data.close()
     end_time = time.time()
     duration = end_time - start_time
     print(f"READ {file_name} DONE (in {duration})")
@@ -98,9 +96,8 @@ def process_file(file_name, file_path, output_path, debug, max_line = 2000000):
         print(f"START PROCESS {file_name}............")
         start_time = time.time()
     i = 0
-    for line in data:
-        if i >= max_line:
-            break
+    for i in range(max_line):
+        line = file_data.readline()
         sentence = line.lower()
         words = split_sent_to_word(sentence)
         if(len(words) == 0):
@@ -118,7 +115,7 @@ def process_file(file_name, file_path, output_path, debug, max_line = 2000000):
         end_time = time.time()
         duration = end_time - start_time
         print(f"write to {file_name} in {duration/60} minutes")
-        
+    file_data.close()
     output_file.close()
 
 def get_arg(argv):
@@ -157,7 +154,7 @@ def main(argv):
         
     if not os.path.exists(output_path):
         os.mkdir(output_path)
-    # threads = []
+        
 
     if os.path.isdir(input_path):
         list_file = os.listdir(input_path)
@@ -167,25 +164,14 @@ def main(argv):
                 continue
             data_path = os.path.join(input_path, file)
             output_file = os.path.join(output_path,file)
-        
-                
-            process_file(file, data_path, output_file, debug=debug)
+            process_file(file, data_path, output_file, debug)
     else :
         file = os.path.basename(input_path)
         output_file = os.path.join(output_path, file)
     
-            
-        process_file(file, input_path, output_file, debug=debug)
-        # print(data_path, output_file)
-        # t = multiprocessing.Process(target=process_file, args=(file, data_path, output_file, debug))
-        # t.start()
-        # print(f"Add to thread: {t.name}, {t.is_alive()}")
-        # threads.append(t)
-    
-    # for thread in threads:
-    #     thread.join()
+        process_file(file, input_path, output_file, debug)
+        
     print("DONE")
-
 
 if __name__ == "__main__":
     main(sys.argv[1:])
