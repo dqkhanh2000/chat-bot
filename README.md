@@ -17,7 +17,7 @@ Download word2vec model from [HERE](https://drive.google.com/file/d/16GfNNehLfhK
 
 ### Usage <a name = "usage"></a>
 
-A step by step series of examples that tell you how to get a development env running.
+python version: 3.7
 
 Install requirements
 
