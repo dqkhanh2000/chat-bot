@@ -4,12 +4,15 @@ import re
 import time
 import multiprocessing
 import math
+import os
+import getopt
+import sys
 
 
 path = "./"
 
 
-def split_sent_to_word(sentence, stop_word):
+def split_sent_to_word(sentence, stop_word = ""):
     words = ''
     for word in word_tokenize(sentence):
         word = re.sub(
@@ -17,9 +20,9 @@ def split_sent_to_word(sentence, stop_word):
         word = word.strip()
         if (" " not in word and len(word) > 7) or (len(word) == 0):
             continue
-        if word not in stop_word:
+        # if word not in stop_word:
 
-            words += word.replace(" ", "_") + " "
+        words += word.replace(" ", "_") + " "
     return words.strip()
 
 
@@ -64,8 +67,8 @@ def create_vocab(document, stop_word, start_line=0):
         words = split_sent_to_word(sentence, stop_word)
         if(len(words) == 0):
             continue
-        # s = json.dumps(words, ensure_ascii=False)
-        output.write(f"{words}\n")
+    # s = json.dumps(words, ensure_ascii=False)
+    output.write(f"{words}\n")
     output.close()
 
 
@@ -77,72 +80,112 @@ def loading_stopWord():
     return stopWord
 
 
-def run_in_thread(start_line, end_line, path, file_name, document, stop_word):
-    output_data = open(path+"/output/"+file_name+".txt", "w")
-    output_info = open(path+"/thread_info/"+file_name+"info.txt", "w")
-    # output_data = io.FileIO(path+"/output/"+file_name+".txt", 'w')
-    # writer = io.BufferedWriter(output_data,buffer_size=100000000)
-
-    print(f"START PROCESS {file_name}............")
+def process_file(file_name, file_path, output_path, debug, max_line = 2000000):
+    
+    print(f"OPENING {file_name}...")
     start_time = time.time()
-
-    for line in range(start_line, end_line+1):
-        if line < len(document):
-            sentence = document[line]
-
-            output_info.write(f"Processing line {line}\n")
-
-            sentence = sentence.lower()
-            words = split_sent_to_word(sentence, stop_word)
-            if(len(words) == 0):
-                continue
-            s = json.dumps(words, ensure_ascii=False)
-            output_data.write(f"{s}\n")
-            # writer.flush()
-
+    file_data = open(file_path, "r", encoding="utf-8")
+    print(f"READING {file_name}...")
+    data = file_data.readlines()
+    file_data.close()
     end_time = time.time()
     duration = end_time - start_time
-    print(f"write to {file_name} in {duration} seconds")
-    # writer.close()
-    output_data.close()
-    output_info.close()
+    print(f"READ {file_name} DONE (in {duration})")
+    
+    output_file = open(output_path, "w", encoding="utf-8")
+
+    if debug:
+        print(f"START PROCESS {file_name}............")
+        start_time = time.time()
+    i = 0
+    for line in data:
+        if i >= max_line:
+            break
+        sentence = line.lower()
+        words = split_sent_to_word(sentence)
+        if(len(words) == 0):
+            continue
+        # s = json.dumps(words, ensure_ascii=False)
+        output_file.write(f"{words}\n")
+        i+=1
+        if debug:
+            sys.stdout.write('\r')
+            percent = math.ceil(i / max_line * 100)
+            sys.stdout.write(f"[{'='*int(percent/5):<20}] {percent}% {i}/{max_line} line")
+            sys.stdout.flush()
+
+    if debug:
+        end_time = time.time()
+        duration = end_time - start_time
+        print(f"write to {file_name} in {duration/60} minutes")
+        
+    output_file.close()
+
+def get_arg(argv):
+    input_path = ''
+    output_path = ''
+    debug = False
+    try:
+        opts, args = getopt.getopt(argv,"hi:o:d",["input=","output=", "debug="])
+    except getopt.GetoptError:
+        print ('pre_process.py -i <input_folder> -o <output_file> -d <debug>')
+        sys.exit(2)
+    for opt, arg in opts:
+        if opt == '-h':
+            print ('pre_process.py -i <input_folder> -o <output_file>  -d <debug>')
+            sys.exit()
+        elif opt in ("-i", "--input"):
+            input_path = arg
+        elif opt in ("-o", "--output"):
+            output_path = arg
+        elif opt in ("-d", "--debug"):
+
+            debug = True
+            
+            
+    input_folder = "./data/" if input_path == '' else input_path
+    output_file = "./output" if output_path == '' else output_path
+    
+    return (input_folder, output_file, debug)
+
+def main(argv):
+    
+    input_path, output_path, debug = get_arg(argv)
+    
+    if not os.path.exists(input_path):
+        raise Exception("Input folder does not exist")
+        
+    if not os.path.exists(output_path):
+        os.mkdir(output_path)
+    # threads = []
+
+    if os.path.isdir(input_path):
+        list_file = os.listdir(input_path)
+        print(f"Found {len(list_file)} in {input_path}")
+        for file in list_file:
+            if os.path.splitext(file)[1] != ".txt":
+                continue
+            data_path = os.path.join(input_path, file)
+            output_file = os.path.join(output_path,file)
+        
+                
+            process_file(file, data_path, output_file, debug=debug)
+    else :
+        file = os.path.basename(input_path)
+        output_file = os.path.join(output_path, file)
+    
+            
+        process_file(file, input_path, output_file, debug=debug)
+        # print(data_path, output_file)
+        # t = multiprocessing.Process(target=process_file, args=(file, data_path, output_file, debug))
+        # t.start()
+        # print(f"Add to thread: {t.name}, {t.is_alive()}")
+        # threads.append(t)
+    
+    # for thread in threads:
+    #     thread.join()
+    print("DONE")
 
 
 if __name__ == "__main__":
-
-    start_time = time.time()
-    print("OPENING DATA FILE...")
-    file = open("./data/a.txt", "r")
-    print("READING DATA FILE...")
-    data = file.readlines()
-    end_time = time.time()
-    duration = end_time - start_time
-    print(f"READ DATA DONE (in {duration})")
-
-    start_time = end_time
-    stop_word = loading_stopWord()
-    words = create_vocab(data, stop_word)
-    end_time = time.time()
-    duration = end_time - start_time
-    print(f"DONE (in {duration})")
-
-    # threads = []
-    # total_line = len(data)
-    # line_in_file =10000
-    # total_file = math.floor(total_line/line_in_file) +1
-    # print(total_file)
-
-    # for index in range(0, total_file):
-    #     start_line = index * line_in_file
-    #     end_line = start_line + line_in_file
-    #     file_name = f"word_{index}"
-    #     t = multiprocessing.Process(target=run_in_thread, args=(start_line, end_line, path, file_name, data, stop_word, ))
-    #     t.start()
-    #     # t.join()
-    #     threads.append(t)
-    # for thread in threads:
-    #     thread.join()
-
-    # end_time = time.time()
-    # duration = end_time - start_time
-    # print(f"DONE (in {duration})")
+    main(sys.argv[1:])

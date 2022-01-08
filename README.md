@@ -14,7 +14,7 @@ This project using fasttext to build word2vec model and RNN(LSTM) to build class
 
 Download word2vec model from [HERE](https://drive.google.com/file/d/16GfNNehLfhKPbsd7TAnQQ49H2C69rp_-/view?usp=sharing) and from [HERE](https://drive.google.com/file/d/14IoMmgOdYSTT05u4oc3A-deaz58ZHbjZ/view?usp=sharing) then put the model into folder model/
 
-### Usage <a name = "usage"></a>
+## Usage <a name = "usage"></a>
 
 python version: 3.7
 
