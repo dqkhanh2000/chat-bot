@@ -1,2 +1,4 @@
 *.txt
 model/
+__pycache__/
+*.pyc
